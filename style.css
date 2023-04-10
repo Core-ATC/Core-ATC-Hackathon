@@ -1,7 +1,11 @@
 body{
+  text-align:center;
 	font:15px/1.5 Arial, Helvetica,sans-serif;
+  color:#000000;
 	padding: 0px;
-	background-color:#f4f3f3;
+	background-color:#000000;
+  background-image:url(spam.png);
+  background-size:130%;
 }
 
 .container{
@@ -11,8 +15,7 @@ body{
 }
 
 header{
-	background:#03A9F4;
-	border-bottom:#448AFF 3px solid;
+  text-align:center;
 	height:120px;
 	width:100%;
 	padding-top:30px;
@@ -26,16 +29,12 @@ header{
 			width:100%;
 			margin:0px;
 		}
-#brandname{
-	float:left;
-	font-size:30px;
-	color: #fff;
-	margin: 10px;
-}
+
 
 header h2{
 	text-align:center;
-	color:#fff;
+	color:#000000;
+  text-underline-position:under;
 
 }
 
@@ -53,4 +52,24 @@ header h2{
     padding: 20px; 
     width: 200px;
     height: 150px;
+}
+
+#brandname
+{
+  margin:auto;
+  text-align:center;
+  color:;
+  font-size:50px;
+  transition:0.3s;
+  font-family:'Times New Roman', Times, serif
+}
+#brandname:hover
+{
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                0 3px 0 #ccc, 0 2px 0 #ccc,
+                0 5px 0 #ccc, 0 4px 0 #ccc,
+                0 7px 0 #ccc, 0 6px 0 #ccc,
+                0 9px 0 #ccc, 0 8px 0 #ccc,
+                0 11px 0 #ccc, 0 10px 0 #ccc,
+                0 20px 30px rgba(0, 0, 0, 0.5);
 }
