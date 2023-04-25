@@ -10,11 +10,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('main.html')
+	return render_template('home.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df= pd.read_csv("datsets.csv", encoding="latin-1")
+	df= pd.read_csv("spam.csv", encoding="latin-1")
 	df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
 	# Features and Labels
 	df['label'] = df['class'].map({'ham': 0, 'spam': 1})
