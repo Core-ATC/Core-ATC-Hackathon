@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Spam Alert - Team Arishti</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'style.css')}}" media="screen">
 </head>
 <body>
-  <header>
+
+	<header>
 		<div class="container">
 		<div id="brandname">
-			Machine Learning App with Flask
+			Spam Alert System - Arishti
 		</div>
-		<h2>Spam Alert - Team Arishti</h2>
+		<h2>Spam Detector For SMS Messages</h2>
 		
 	</div>
 	</header>
@@ -21,12 +22,12 @@
 		<form action="{{ url_for('predict')}}" method="POST">
 		<p>Enter Your Message Here</p>
 		<!-- <input type="text" name="comment"/> -->
-		<textarea name="message" rows="4" cols="50" ></textarea>
+		<textarea name="message" rows="4" cols="50"></textarea>
 		<br/>
 
 		<input type="submit" class="btn-info" value="Predict">
-    </div>
 		
 	</form>
+	</div>
 </body>
 </html>
