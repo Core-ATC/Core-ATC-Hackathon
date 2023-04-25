@@ -1,75 +1,88 @@
-body{
+	@font-face
+{
+  font-family: 'Product Sans';
+  font-style:normal;
+  font-weight:100;
+  src: local('Open Sans'), local('OpenSans'),
+  url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
+  format('woff2');
+}
+body
+{
+  font-family: 'Product Sans';
   text-align:center;
-	font:15px/1.5 Arial, Helvetica,sans-serif;
-  color:#000000;
-	padding: 0px;
-	background-color:#000000;
+  color:whitesmoke;
+  padding: 0px;
+  background-color:#ffffff;
   background-image:url(spam.png);
-  background-size:130%;
+  background-size:cover;
 }
-
-.container{
-	width:100%;
-	margin: auto;
-	overflow: hidden;
+  
+.container
+{
+  width:100%;
+  margin: auto;
+  overflow: hidden;
 }
-
-header{
+  
+header
+{
   text-align:center;
-	height:120px;
-	width:100%;
-	padding-top:30px;
-
+  height:120px;
+  width:100%;
+  padding-top:30px;
+  
 }
-
-.main-header{
-			text-align:center;
-			background-color: blue;
-			height:100px;
-			width:100%;
-			margin:0px;
-		}
-
-
-header h2{
-	text-align:center;
-	color:#000000;
-  text-underline-position:under;
-
+  
+.main-header
+{
+  text-align:center;
+  background-color: blue;
+  height:100px;
+  width:100%;
+  margin:0px;
 }
-
-
-
-.btn-info {background-color: #2196F3;
-	height:40px;
-	width:100px;} /* Blue */
+  
+header h2
+{
+  text-align:center;
+  color:whitesmoke;
+}
+  
+.btn-info
+{
+  background-color: #2196F3;
+  height:40px;
+  width:100px;
+} /* Blue */
 .btn-info:hover {background: #0b7dda;}
-
-
-.resultss{
-	border-radius: 15px 50px;
-    background: #345fe4;
-    padding: 20px; 
-    width: 200px;
-    height: 150px;
+  
+.resultss
+{
+  border-radius: 15px 50px;
+  background: #345fe4;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;
 }
-
+  
 #brandname
 {
   margin:auto;
   text-align:center;
-  color:;
-  font-size:50px;
-  transition:0.3s;
-  font-family:'Times New Roman', Times, serif
+  color:blue;
+  font-size:40px;
+  transition:0.5s;
+  font-family:'Product Sans';
+  font-style: normal;
 }
 #brandname:hover
 {
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-                0 3px 0 #ccc, 0 2px 0 #ccc,
-                0 5px 0 #ccc, 0 4px 0 #ccc,
-                0 7px 0 #ccc, 0 6px 0 #ccc,
-                0 9px 0 #ccc, 0 8px 0 #ccc,
-                0 11px 0 #ccc, 0 10px 0 #ccc,
-                0 20px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 0 red, 0 2px 0 red,
+                  0 3px 0 red, 0 2px 0 red,
+                  0 5px 0 pink, 0 4px 0 pink,
+                  0 7px 0 pink, 0 6px 0 pink,
+                  0 9px 0 orangered, 0 8px 0 orangered,
+                  0 11px 0 orangered, 0 10px 0 orangered,
+                  0 20px 30px rgba(0, 0, 0, 0.5);
 }
