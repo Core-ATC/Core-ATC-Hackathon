@@ -2,16 +2,16 @@ from flask import Flask,render_template,url_for,request, jsonify, json
 import pandas as pd 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
+from flask_cors import CORS
 
 app = Flask(__name__)
 
+# add url instead of * from wherever you want to call this api
+# cors is used to stop cross site request forgery
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
 @app.route('/', methods=["GET", "POST"])
 def home():
-<<<<<<< HEAD:driver.py
-	# return render_template('index.html')
-	return ('Hello World')
-@app.route('/predict',methods=['POST'])
-=======
     return jsonify(
         json.dumps({
             "code": "SUCCESS",
@@ -28,7 +28,6 @@ def ndarray_to_list(ndarray):
         return [ndarray_to_list(arr) for arr in ndarray]
 
 @app.route('/predict',methods=['GET', 'POST'])
->>>>>>> 5fc52cc20dda647285ecf44f52fe295da2796e3e:app.py
 def predict():
 	df= pd.read_csv("spam.csv", encoding="latin-1")
 	df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, inplace=True)
