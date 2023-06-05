@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'SpamX'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E8CFC2436114F2AB7D97F0D9CF09E4D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B3BDFD4C2C4645E48759821CE7995377 }}
